@@ -1,8 +1,8 @@
 Here's the prioritized implementation checklist following component dependencies:
 
 ### Foundation Layer
-- [ ] Create `/pages/gallery.tsx` with basic Next.js layout (Frame Metadata Setup)
-- [ ] Add required FC metadata tags (og:image, fc:frame, etc.) to gallery page (Frame Metadata Setup)
+- [x] Create `/pages/gallery.tsx` with basic Next.js layout (Frame Metadata Setup)
+- [x] Add required FC metadata tags (og:image, fc:frame, etc.) to gallery page (Frame Metadata Setup)
 - [ ] Implement POST route `/api/frame` with empty handler (Frame Metadata Setup)
 - [ ] Define `FrameMetadata` and `MediaItem` TypeScript types (Frame Metadata Setup)
 - [ ] Create `api/service/farcaster.ts` service file skeleton (Media API Service)
