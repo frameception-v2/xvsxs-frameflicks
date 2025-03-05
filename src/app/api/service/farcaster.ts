@@ -1,4 +1,4 @@
-import { MediaItem } from "~/lib/constants";
+import { type MediaItem } from "~/lib/constants";
 
 type MediaEmbed = {
   url: string;
