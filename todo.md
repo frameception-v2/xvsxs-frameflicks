@@ -6,7 +6,7 @@ Here's the prioritized implementation checklist following component dependencies
 - [x] Implement POST route `/api/frame` with empty handler (Frame Metadata Setup)
 - [x] Define `FrameMetadata` and `MediaItem` TypeScript types (Frame Metadata Setup)
 - [x] Create `api/service/farcaster.ts` service file skeleton (Media API Service)
-- [ ] Configure environment variable `NEXT_PUBLIC_FARCASTER_API` (Media API Service)
+- [x] Configure environment variable `NEXT_PUBLIC_FARCASTER_API` (Media API Service)
 - [ ] Implement `fetchUserMedia` with error handling and retries (Media API Service)
 - [ ] Add media URL validation regex (`/\.(jpg|jpeg|png|gif|mp4|mov)$/i`) (Media API Service)
 
