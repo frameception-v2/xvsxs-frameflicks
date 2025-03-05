@@ -48,15 +48,11 @@ export default function useGallery(initialIndex = 0) {
     try {
       setState(prev => ({ ...prev, loading: true, error: null }));
       
-      // TODO: Implement actual API call
-      // const media = await fetchUserMedia();
-      
-      // Temporary mock data
-      const mockMedia: MediaItem[] = [];
+      const media = await fetchUserMedia();
       
       setState(prev => ({
         ...prev,
-        mediaItems: mockMedia,
+        mediaItems: media,
         loading: false
       }));
     } catch (error) {
