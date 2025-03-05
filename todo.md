@@ -4,7 +4,7 @@ Here's the prioritized implementation checklist following component dependencies
 - [x] Create `/pages/gallery.tsx` with basic Next.js layout (Frame Metadata Setup)
 - [x] Add required FC metadata tags (og:image, fc:frame, etc.) to gallery page (Frame Metadata Setup)
 - [x] Implement POST route `/api/frame` with empty handler (Frame Metadata Setup)
-- [ ] Define `FrameMetadata` and `MediaItem` TypeScript types (Frame Metadata Setup)
+- [x] Define `FrameMetadata` and `MediaItem` TypeScript types (Frame Metadata Setup)
 - [ ] Create `api/service/farcaster.ts` service file skeleton (Media API Service)
 - [ ] Configure environment variable `NEXT_PUBLIC_FARCASTER_API` (Media API Service)
 - [ ] Implement `fetchUserMedia` with error handling and retries (Media API Service)
