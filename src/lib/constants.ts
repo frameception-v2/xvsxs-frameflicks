@@ -21,7 +21,7 @@ export type FrameMetadata = {
 // Media Item Type for Gallery
 export type MediaItem = {
   url: string;
-  type: 'image' | 'video';
+  type: 'image' | 'video' | 'unknown';
   caption?: string;
   timestamp: Date;
   dimensions?: {

@@ -8,7 +8,7 @@ Here's the prioritized implementation checklist following component dependencies
 - [x] Create `api/service/farcaster.ts` service file skeleton (Media API Service)
 - [x] Configure environment variable `NEXT_PUBLIC_FARCASTER_API` (Media API Service)
 - [x] Implement `fetchUserMedia` with error handling and retries (Media API Service)
-- [ ] Add media URL validation regex (`/\.(jpg|jpeg|png|gif|mp4|mov)$/i`) (Media API Service)
+- [x] Add media URL validation regex (`/\.(jpg|jpeg|png|gif|mp4|mov)$/i`) (Media API Service)
 
 ### State Management
 - [ ] Create `hooks/useGallery.ts` with useState/useEffect skeleton (Gallery State Management)
