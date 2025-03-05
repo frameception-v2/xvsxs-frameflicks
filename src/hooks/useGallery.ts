@@ -1,13 +1,16 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { MediaItem } from '~/lib/constants';
+import { fetchUserMedia } from '~/app/api/service/farcaster';
+
+type GalleryState = {
+  mediaItems: MediaItem[];
+  currentIndex: number;
+  isLoading: boolean;
+  error: string | null;
+};
 
 export const useGallery = () => {
-  const [galleryState, setGalleryState] = useState<{
-    mediaItems: MediaItem[];
-    currentIndex: number;
-    isLoading: boolean;
-    error: string | null;
-  }>(() => {
+  const [galleryState, setGalleryState] = useState<GalleryState>(() => {
     // Initialize from sessionStorage or defaults
     if (typeof window !== 'undefined') {
       const savedState = sessionStorage.getItem('galleryState');
