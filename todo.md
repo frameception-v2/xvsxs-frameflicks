@@ -18,7 +18,7 @@ Here's the prioritized implementation checklist following component dependencies
 - [ ] Implement media preloading system for next items (Gallery State Management)
 
 ### Core UI
-- [ ] Create `components/MediaViewport.tsx` component shell (Core UI Components)
+- [x] Create `components/MediaViewport.tsx` component shell (Core UI Components)
 - [ ] Build responsive grid container with aspect ratio (Core UI Components)
 - [ ] Implement media type detection (image/video) (Core UI Components)
 - [ ] Add navigation overlay buttons with hover states (Core UI Components)
