@@ -39,16 +39,24 @@ export const useGallery = () => {
   // Navigation handlers with boundary checks and session storage
   const handleNext = useCallback(() => {
     setGalleryState(prev => {
-      const newIndex = Math.min(prev.currentIndex + 1, prev.mediaItems.length - 1);
-      sessionStorage.setItem('galleryCurrentIndex', newIndex.toString());
+      if (prev.mediaItems.length === 0) return prev;
+      const newIndex = (prev.currentIndex + 1) % prev.mediaItems.length;
+      sessionStorage.setItem('galleryState', JSON.stringify({
+        ...prev,
+        currentIndex: newIndex
+      }));
       return {...prev, currentIndex: newIndex};
     });
   }, []);
 
   const handlePrev = useCallback(() => {
     setGalleryState(prev => {
-      const newIndex = Math.max(prev.currentIndex - 1, 0);
-      sessionStorage.setItem('galleryCurrentIndex', newIndex.toString());
+      if (prev.mediaItems.length === 0) return prev;
+      const newIndex = (prev.currentIndex - 1 + prev.mediaItems.length) % prev.mediaItems.length;
+      sessionStorage.setItem('galleryState', JSON.stringify({
+        ...prev,
+        currentIndex: newIndex
+      }));
       return {...prev, currentIndex: newIndex};
     });
   }, []);
