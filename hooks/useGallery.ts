@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { MediaItem } from '~/lib/constants';
+import { fetchUserMedia } from '~/api/service/farcaster';
 
 type GalleryState = {
   mediaItems: MediaItem[];
